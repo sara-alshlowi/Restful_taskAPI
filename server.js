@@ -4,6 +4,7 @@ app.listen(8000);
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
+app.use(express.static( __dirname + '/public/dist/public' ));
 
 const mongoose = require('mongoose');
 

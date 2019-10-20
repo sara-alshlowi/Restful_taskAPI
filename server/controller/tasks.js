@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const Task = mongoose.model('Task');
-model.exports ={
+const Task = mongoose.model("Task");
+module.exports ={
     GetAllTasks: function (req, res) {//Retrieve all Tasks
         Task.find()
             .then(data =>{console.log("data in server",data),res.json(data)})
